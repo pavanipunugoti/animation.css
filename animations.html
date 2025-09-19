@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .box{
+            border-radius: 0%;
+            background-color: chocolate;
+            width:100%;
+            height:500px;
+             
+        }
+        .div1{
+            background-color: rgb(237, 103, 8);
+            border-radius: 50%;
+            width:150px;
+            height:150px;
+            position: relative;
+            left:560px;
+            top:70px;
+            z-index:100;
+        }
+        .div2{
+            width:170px;
+            height:170px;
+            background-color: yellow;
+            border-radius:50%;
+            position:absolute;
+            top:60px;
+            left:550px;
+            animation-name:anime;
+            animation-delay: 1s;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes anime{
+            0%{
+                top:60px;
+                left:550px;
+            }
+            25%{
+                
+                width:150px;
+                height:150px;
+                top:90px;
+                left:580px;
+            }
+            50%{
+                width:170px;
+                height:170px;
+                top:60px;
+                left:550px;   
+            }
+            75%{
+                 width:150px;
+                height:150px;
+                top:70px;
+                left:560px;
+            }
+            100%{
+                width:170px;
+                height:170px;
+                top:60px;
+                left:550px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="div1"></div>
+        <div class="div2"></div>
+    </div>
+</body>
+</html>
